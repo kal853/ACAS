@@ -1,1 +1,0 @@
-	COMMON CLRS$, BELL$, AF$, EOL$, EOP$, ROW%(1), COL%(1)
