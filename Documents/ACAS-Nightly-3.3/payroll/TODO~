@@ -1,0 +1,119 @@
+This is a rolling document with the latest, lower down but has a rolling status
+at the top.
+
+
+Written :
+
+Name     - Menu - Description
+payroll  -      - Main menu & application program
+py000    -  A   - Today's date changer
+py010    -  L   - Completed for Employee data entry replacing 3 Basic progs.
+py900    -  J   - Parameter entry program for all 6 processes, etc.
+py920    -  I   - Account Entry & Print.
+py930    -  K   - History Enter & Update  - NOT COMPLETE. vis pyupd?? progs
+empprint -  T   - Employee Report
+hisprint -  U   - Emp History Report.
+vacprint -  V   - Vacation report.
+py900    -  Y   - Payroll Parameter Entry
+
+
+So now we have Payroll menu completed options in menu order for :-
+
+A - Date Entry              - py000
+I - Account Entry & print   - py920
+J - Deduction/Earning Entry - py900
+K - History Entry/Update    - py930
+L - Employee Data Entry     - py010
+T - Employee Report         - empprint
+U - Emp History Report      - hisprint
+V - Vacation report         - vacprint
+Y - Payroll Parameter Entry - py900
+
+
+
+
+
+
+Options M and N removed as Employee data entry is in py010 via sub menu.
+
+PY930 started to process :-
+1. Employee Historic totals passed to Company histories.
+2. Company Liabilities (taxes collected on behalf of State, Federal & Local
+government.
+3. Payment history of taxes paid both employee contributions and company.
+
+This is mostly the screens used with only basic coding to date.
+
+
+
+So as of today coded programs are :
+
+payroll	- Main menu for Payroll.
+
+py000	- Date entry - allows change of todays date.
+
+py010	- Employee data entry four screens containing :
+          1. Primary Data entry included name & address etc.
+          2. Earn/Ded & Cost entry.
+          3. Rate Data entry.
+          4. Employee History entry.
+          The last one to record payments of new employee from last employer
+          for current year.
+
+py900	- Company data entry:
+	      1. Company ID and general data.
+	      2. Pay Intervals and Default Employee Payroll Data.
+          3. Payroll System Configuration and GL Interface.
+          4. Standard Deduction Rates.
+          5. Federal Withholding Tax Table Entry.
+          6. System Earning and Deduction Information
+
+py920   - Account Table maintenance.
+
+py930   - Employee History maintenance.   CURRENTLY WORKING ON THIS ON - 10 Feb 2026.
+
+py9nn   - Tax table data entry per state, local and Federal by current and next year.
+
+empprint- Employee report
+hisprint- Emp History report
+vacprint- Emp Vacation report
+
+
+Notes for me, OK reminders.
+
+Warning:  All Warning & Error messages to be renumbered for prog specific and uniqueness.
+          Doing so, near end of coding & try and make use of the manuals details for such.
+
+          New program code is using program names that match the basic ones. This will
+          make it easier to spot any missed as once the Cobol version is completed
+          the basic source will be more to folder Completed-Migrations (Not on the CVS
+          system as mostly for me to keep track on).
+
+These program name / numbers are subject to change and more than likely will be.
+Some may be merged together.
+
+The py100 series will be for reports of all types mostly with py100 acting as menu.
+py110 and onwards for each report type including 940, 941 and W-2 reports.
+
+py0nn  series for handling the primary processing with py010 written more or less.
+
+py20 +  to process the main payroll apply processes and pay data entry steps.
+
+The copy books stored in folder copybooks are subject to changes where some field
+formats were guessed at and closer examination of the basic code as well as new
+Cobol code reveals some more changes as new coding is added.
+
+Update the payroll manual in folder ACAS-Manuals which is 1.0 or v1.0C for the
+Cobol version.
+
+The ones ending in 1.0B are for the CBasic version only which is stored within
+Basic-Code folder.
+
+A lot more to do.
+
+
+Vincent Coen
+Create  03/02/2026.
+Updated 10/02/2026.
+
+
